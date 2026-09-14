@@ -225,7 +225,7 @@ details.orig summary:hover { color: var(--text); }
 .article-body blockquote { margin: 1.4em 0; padding: 4px 0 4px 20px; border-left: 3px solid var(--accent); color: var(--text-2); font-style: italic; }
 .article-body pre {
   font-family: var(--mono); font-size: 14.5px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;
-  background: var(--pre-bg); color: var(--pre-text); border: 1px solid var(--pre-border); border-left: 3px solid var(--accent-2);
+  background: var(--pre-bg); color: var(--pre-text); border: 1px solid var(--pre-border);
   border-radius: 10px; padding: 16px 18px; margin: 1.4em 0; position: relative;
 }
 .article-body code { font-family: var(--mono); font-size: .9em; }
@@ -258,7 +258,7 @@ details.orig summary:hover { color: var(--text); }
 .appears { margin: 26px 0 0; padding: 14px 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); font-size: 14px; }
 .appears b { display: block; margin-bottom: 6px; font-size: 11px; text-transform: uppercase; letter-spacing: .09em; color: var(--muted); }
 .appears a { display: inline-block; margin: 2px 10px 2px 0; }
-.notice { padding: 12px 16px; border: 1px solid var(--border-2); border-left: 3px solid var(--accent); border-radius: 10px; background: var(--surface); font-size: 14.5px; margin: 0 0 20px; color: var(--text-2); }
+.notice { padding: 12px 16px; border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--border-2)); border-radius: 10px; background: color-mix(in srgb, var(--accent) 6%, var(--surface)); font-size: 14.5px; margin: 0 0 20px; color: var(--text-2); }
 .notice a { color: var(--accent-2); }
 
 /* ---------- timeline ---------- */
@@ -482,13 +482,15 @@ body.sheet-open { overflow: hidden; }
 .ai-intro .spark { width: 22px; height: 22px; margin-top: 2px; }
 .ai-intro b { color: var(--text); }
 .ai-intro p { margin: 0 0 4px; }
-.ai-tldr { padding: 16px 18px; margin: 0 0 22px; border-radius: 14px; background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--accent); }
+.ai-tldr { padding: 16px 18px; margin: 0 0 22px; border-radius: 14px; background: color-mix(in srgb, var(--accent) 7%, var(--surface)); border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--border)); }
 .ai-tldr h3, .ai-key h3 { margin: 0 0 8px !important; font-family: var(--sans) !important; font-size: 12px !important; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); font-weight: 600; }
 .ai-tldr p:last-child, .ai-key p:last-child, .ai-key ul:last-child { margin-bottom: 0; }
 .ai-tldr p { font-size: 18px; }
 .ai-key { padding: 14px 16px; margin: 1.2em 0; border-radius: 12px; background: var(--surface); border: 1px solid var(--border); }
-.ai-key.warn { border-left: 4px solid var(--accent-2); }
-.ai-key.gold { border-left: 4px solid var(--accent); }
+.ai-key.warn { background: color-mix(in srgb, var(--accent-2) 6%, var(--surface)); border-color: color-mix(in srgb, var(--accent-2) 30%, var(--border)); }
+.ai-key.warn h3 { color: var(--accent-2); }
+.ai-key.gold { background: color-mix(in srgb, var(--accent) 7%, var(--surface)); border-color: color-mix(in srgb, var(--accent) 30%, var(--border)); }
+.ai-key.gold h3 { color: var(--accent); }
 .ai-fig { margin: 1.6em 0; padding: 14px 14px 10px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); overflow: hidden; }
 .ai-fig svg { display: block; width: 100%; height: auto; max-height: 460px; font-family: var(--sans); }
 .ai-fig figcaption { font-family: var(--sans); font-size: 13.5px; color: var(--muted); text-align: left; margin: 10px 2px 0; line-height: 1.45; }
