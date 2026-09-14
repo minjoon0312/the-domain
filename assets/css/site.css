@@ -386,16 +386,6 @@ details.orig summary:hover { color: var(--text); }
 .js .hero .art { animation-delay: 90ms; }
 .js .article-body { animation-delay: 60ms; }
 
-/* scroll reveal for lists and grids (JS adds .reveal, then .in) */
-.js .reveal { opacity: 0; transform: translateY(12px); transition: opacity var(--slow) var(--ease), transform var(--slow) var(--ease); }
-.js .reveal.in { opacity: 1; transform: none; }
-.js .reveal.in.card:hover { transform: translateY(-3px); }
-.js .reveal.in.row:hover { transform: translateX(3px); }
-
-/* images fade in as they load */
-.js .article-body img, .js .row .th, .js .card .img img, .js video.gif { opacity: 0; transition: opacity var(--slow) var(--ease), transform var(--slow) var(--ease), box-shadow var(--slow) var(--ease); }
-.js .article-body img.loaded, .js .row .th.loaded, .js .card .img img.loaded, .js video.gif.loaded { opacity: 1; }
-
 /* theme cross-fade (class is added for the duration of the switch only) */
 .theme-anim, .theme-anim *, .theme-anim *::before, .theme-anim *::after { transition: background-color .4s var(--ease), color .4s var(--ease), border-color .4s var(--ease), box-shadow .4s var(--ease) !important; }
 
@@ -404,8 +394,6 @@ details.orig summary:hover { color: var(--text); }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
-  .js .reveal { opacity: 1; transform: none; }
-  .js .article-body img, .js .row .th, .js .card .img img, .js video.gif { opacity: 1; }
 }
 
 /* ---------- browse menu (top bar) ---------- */

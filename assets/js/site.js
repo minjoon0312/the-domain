@@ -55,37 +55,6 @@
     window.addEventListener("scroll", onTop, { passive: true }); onTop();
   }
 
-  // ---------- scroll reveal (cards, rows, stats, timeline rows) ----------
-  var revealEls = Array.prototype.slice.call(document.querySelectorAll(".cards .card, .list .row, .stats .stat, .trow, .pn a, .appears"));
-  if (revealEls.length && "IntersectionObserver" in window && !reduced) {
-    revealEls.forEach(function (el) { el.classList.add("reveal"); });
-    var pending = [];
-    var flush = function () {
-      pending.forEach(function (el, i) { el.style.transitionDelay = Math.min(i * 45, 320) + "ms"; el.classList.add("in"); });
-      pending = [];
-    };
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) { if (e.isIntersecting) { pending.push(e.target); io.unobserve(e.target); } });
-      if (pending.length) requestAnimationFrame(flush);
-    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
-    revealEls.forEach(function (el) { io.observe(el); });
-    // anything already visible above the fold reveals immediately in order
-    setTimeout(function () {
-      revealEls.forEach(function (el) {
-        if (!el.classList.contains("in") && el.getBoundingClientRect().top < window.innerHeight) { pending.push(el); io.unobserve(el); }
-      });
-      flush();
-    }, 40);
-  }
-
-  // ---------- image fade-in ----------
-  document.querySelectorAll(".article-body img, .row .th, .card .img img, video.gif").forEach(function (el) {
-    var done = function () { el.classList.add("loaded"); };
-    if (el.tagName === "VIDEO") { if (el.readyState >= 2) done(); else { el.addEventListener("loadeddata", done); el.addEventListener("error", done); } return; }
-    if (el.complete) done(); else { el.addEventListener("load", done); el.addEventListener("error", done); }
-  });
-  setTimeout(function () { document.querySelectorAll(".js .article-body img:not(.loaded), .js .row .th:not(.loaded), .js .card .img img:not(.loaded)").forEach(function (el) { if (el.complete) el.classList.add("loaded"); }); }, 1500);
-
   // ---------- count-up for landing stats ----------
   if (!reduced) document.querySelectorAll(".stats .stat b").forEach(function (b) {
     var raw = b.textContent.trim(), m = raw.match(/^([\d,]+)$/);
@@ -159,10 +128,6 @@
       rows.forEach(function (r) {
         var ok = active === "all" || (" " + r.getAttribute("data-c") + " ").indexOf(" " + active + " ") >= 0 || r.getAttribute("data-a") === active;
         r.style.display = ok ? "" : "none";
-        if (ok && r.classList.contains("reveal")) {
-          r.classList.remove("in"); r.style.transitionDelay = Math.min(shown * 20, 240) + "ms"; shown++;
-          requestAnimationFrame(function () { requestAnimationFrame(function () { r.classList.add("in"); }); });
-        }
       });
       document.querySelectorAll(".year").forEach(function (y) {
         var any = Array.prototype.some.call(y.querySelectorAll(".trow"), function (r) { return r.style.display !== "none"; });
