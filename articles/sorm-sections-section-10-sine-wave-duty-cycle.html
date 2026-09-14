@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-base="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Section 10: Section X: The Sine Wave and the Duty Cycle · The Domain Archive</title>
+<meta name="description" content="Version: 13.1 Author: Robert Vannrox Date: September 13, 2026">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script>document.documentElement.classList.add("js");try{document.documentElement.setAttribute("data-theme",localStorage.getItem("tda-theme")||"dark")}catch(e){}</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html" title="The Domain Archive">
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.5"/><ellipse cx="16" cy="16" rx="13" ry="5" stroke="currentColor" stroke-width="1.2" transform="rotate(-25 16 16)"/><circle cx="16" cy="16" r="3.2" fill="currentColor"/></svg>
+      <span>The Domain Archive</span>
+    </a>
+    
+    <nav class="nav">
+      <a href="../index.html" >Home</a>
+      <div class="menu-wrap" id="menuWrap">
+        <button class="menu-btn " type="button" aria-expanded="false" aria-controls="mega">Browse <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="mega" id="mega">
+          <div class="mega-grid">
+      <div class="mega-col">
+        <h5>Start here</h5>
+        <a href="../collections/the-domain.html"><span>The Domain</span><small>33</small></a><a href="../collections/for-new-visitors-read-this-first.html"><span>For New Visitors – Read This First</span><small>14</small></a><a href="../collections/an-authorized-majestic-disclosure.html"><span>MAJestic Disclosure</span><small>49</small></a><a href="../collections/terms-and-conventions.html"><span>Terms and Conventions</span><small></small></a>
+      </div>
+      
+      <div class="mega-col">
+        <h5>MAJestic &amp; extraterrestrials</h5>
+        <a href="../collections/majestic-related-index.html"><span>MAJestic Related Index</span><small>86</small></a><a href="../collections/extraterrestrial-species-majestic-disclosure-real-information-no-disinformation.html"><span>Extraterrestrial Species</span><small>22</small></a><a href="../collections/type-1-grey-extraterrestrial-index-articles-space-majestic.html"><span>Type 1 Grey Extraterrestrials</span><small>23</small></a>
+      </div>
+      
+      <div class="mega-col">
+        <h5>How reality works</h5>
+        <a href="../collections/world-line-travel-index.html"><span>World-Line Travel Index</span><small>18</small></a><a href="../collections/intention-and-prayer-campaigns-to-make-your-wishes-come-true.html"><span>Intention and Prayer Campaigns</span><small>61</small></a><a href="../collections/diy-teleortation-technique-hardware-do-it-yourself.html"><span>DIY – Do It Yourself Dimensional Portal Construction and Techniques</span><small>10</small></a><a href="../collections/gateway-techniques-hemi-sync-ffb.html"><span>Gateway Techniques (Hemi-Sync &amp; FFR)</span><small>6</small></a><a href="../collections/heaven.html"><span>Heaven</span><small>17</small></a><a href="../collections/past-life-regression-index.html"><span>Past Life Regression Index</span><small>3</small></a><a href="../collections/fate-luck-forecasting.html"><span>Fate Forecasting</span><small>3</small></a><a href="../collections/quantum-construction-video-series.html"><span>Quantum construction video series</span><small>2</small></a>
+      </div>
+      
+      <div class="mega-col">
+        <h5>Mysteries &amp; anomalies</h5>
+        <a href="../collections/john-titor-index.html"><span>John Titor Index</span><small>9</small></a><a href="../collections/oopart-related-index.html"><span>OOPART Related Index</span><small>33</small></a>
+      </div>
+      
+      <div class="mega-col">
+        <h5>Guest contributors</h5>
+        <a href="../collections/daegonmagus.html"><span>Daegonmagus</span><small>34</small></a><a href="../collections/pissedlizard.html"><span>PissedLizard</span><small>3</small></a>
+      </div>
+      
+      <div class="mega-col">
+        <h5>Patreon &amp; GitHub</h5>
+        <a href="../collections/sorm.html"><span>ΨORM: the Ψ-Ontic Reality Model</span><small>62</small></a><a href="../collections/patreon.html"><span>Patreon posts</span><small></small></a>
+      </div>
+      
+      <div class="mega-col">
+        <h5>About the source</h5>
+        <a href="../collections/metallicman-questions-and-answers.html"><span>Questions and Answers</span><small>12</small></a><a href="../collections/the-grey-web.html"><span>The Grey Web</span><small></small></a><a href="../collections/about-me.html"><span>About Me</span><small>47</small></a>
+      </div>
+      
+      <div class="mega-col">
+        <h5>More</h5>
+        <a href="../collections/more-related-articles.html"><span>More related articles</span><small>27</small></a>
+      </div>
+      </div>
+          <div class="mega-foot"><a href="../browse.html">Browse every article →</a><a href="../timeline.html">Timeline</a><a href="../about.html">About this archive</a></div>
+        </div>
+      </div>
+      <a href="../timeline.html" >Timeline</a>
+      <a href="../about.html" >About</a>
+    </nav>
+    <div class="spacer"></div>
+    <button class="searchbtn" data-open-search type="button" aria-label="Search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <span class="lbl">Search the archive</span><kbd>⌘K</kbd>
+    </button>
+    <button class="iconbtn burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="sheet">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path class="l1" d="M4 7h16"/><path class="l2" d="M4 12h16"/><path class="l3" d="M4 17h16"/></svg>
+    </button>
+    <button class="iconbtn" id="themeBtn" type="button" title="Toggle light / dark" aria-label="Toggle theme">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </div>
+</header>
+<div class="sheet" id="sheet">
+  <div class="sheet-links"><a href="../index.html">Home</a><a href="../browse.html">Browse every article</a><a href="../timeline.html">Timeline</a><a href="../about.html">About this archive</a></div>
+  <div class="sheet-grid">
+      <div class="sheet-col">
+        <h5>Start here</h5>
+        <a href="../collections/the-domain.html"><span>The Domain</span><small>33</small></a><a href="../collections/for-new-visitors-read-this-first.html"><span>For New Visitors – Read This First</span><small>14</small></a><a href="../collections/an-authorized-majestic-disclosure.html"><span>MAJestic Disclosure</span><small>49</small></a><a href="../collections/terms-and-conventions.html"><span>Terms and Conventions</span><small></small></a>
+      </div>
+      
+      <div class="sheet-col">
+        <h5>MAJestic &amp; extraterrestrials</h5>
+        <a href="../collections/majestic-related-index.html"><span>MAJestic Related Index</span><small>86</small></a><a href="../collections/extraterrestrial-species-majestic-disclosure-real-information-no-disinformation.html"><span>Extraterrestrial Species</span><small>22</small></a><a href="../collections/type-1-grey-extraterrestrial-index-articles-space-majestic.html"><span>Type 1 Grey Extraterrestrials</span><small>23</small></a>
+      </div>
+      
+      <div class="sheet-col">
+        <h5>How reality works</h5>
+        <a href="../collections/world-line-travel-index.html"><span>World-Line Travel Index</span><small>18</small></a><a href="../collections/intention-and-prayer-campaigns-to-make-your-wishes-come-true.html"><span>Intention and Prayer Campaigns</span><small>61</small></a><a href="../collections/diy-teleortation-technique-hardware-do-it-yourself.html"><span>DIY – Do It Yourself Dimensional Portal Construction and Techniques</span><small>10</small></a><a href="../collections/gateway-techniques-hemi-sync-ffb.html"><span>Gateway Techniques (Hemi-Sync &amp; FFR)</span><small>6</small></a><a href="../collections/heaven.html"><span>Heaven</span><small>17</small></a><a href="../collections/past-life-regression-index.html"><span>Past Life Regression Index</span><small>3</small></a><a href="../collections/fate-luck-forecasting.html"><span>Fate Forecasting</span><small>3</small></a><a href="../collections/quantum-construction-video-series.html"><span>Quantum construction video series</span><small>2</small></a>
+      </div>
+      
+      <div class="sheet-col">
+        <h5>Mysteries &amp; anomalies</h5>
+        <a href="../collections/john-titor-index.html"><span>John Titor Index</span><small>9</small></a><a href="../collections/oopart-related-index.html"><span>OOPART Related Index</span><small>33</small></a>
+      </div>
+      
+      <div class="sheet-col">
+        <h5>Guest contributors</h5>
+        <a href="../collections/daegonmagus.html"><span>Daegonmagus</span><small>34</small></a><a href="../collections/pissedlizard.html"><span>PissedLizard</span><small>3</small></a>
+      </div>
+      
+      <div class="sheet-col">
+        <h5>Patreon &amp; GitHub</h5>
+        <a href="../collections/sorm.html"><span>ΨORM: the Ψ-Ontic Reality Model</span><small>62</small></a><a href="../collections/patreon.html"><span>Patreon posts</span><small></small></a>
+      </div>
+      
+      <div class="sheet-col">
+        <h5>About the source</h5>
+        <a href="../collections/metallicman-questions-and-answers.html"><span>Questions and Answers</span><small>12</small></a><a href="../collections/the-grey-web.html"><span>The Grey Web</span><small></small></a><a href="../collections/about-me.html"><span>About Me</span><small>47</small></a>
+      </div>
+      
+      <div class="sheet-col">
+        <h5>More</h5>
+        <a href="../collections/more-related-articles.html"><span>More related articles</span><small>27</small></a>
+      </div>
+      </div>
+</div>
+<div class="progress" id="progress"></div>
+<main>
+
+<div class="wrap layout three">
+  <aside class="side collapsible">
+    <button class="side-toggle" type="button" aria-expanded="false">☰ In this collection</button>
+    <div class="side-body">
+    
+    <h4>In this collection</h4>
+    <div class="small" style="margin-bottom:8px"><a class="cur" href="../collections/sorm.html">ΨORM: the Ψ-Ontic Reality Model</a></div>
+    <ul>
+      <li><a href="../articles/sorm-readme.html" >1. SORM: The Ψ-Ontic Reality Model</a></li><li><a href="../articles/sorm-core-thesis.html" >2. Core Thesis — ΨORM</a></li><li><a href="../articles/sorm-master-index.html" >3. ΨORM — Master Index</a></li><li><a href="../articles/sorm-sections-section-01-introduction.html" >4. Section 1: Section I: Introduction</a></li><li><a href="../articles/sorm-sections-section-02-intellectual-ancestry.html" >5. Section 2: Section II: Intellectual Ancestry and Positioning</a></li><li><a href="../articles/sorm-sections-section-03-foundational-claims.html" >6. Section 3: Section III: Foundational Claims</a></li><li><a href="../articles/sorm-sections-section-04-grounding-in-mainstream-physics.html" >7. Section 4: Section IV: Grounding in Mainstream Physics</a></li><li><a href="../articles/sorm-sections-section-05-mathematical-formalization.html" >8. Section 5: Section V: Mathematical Formalization</a></li><li><a href="../articles/sorm-sections-section-06-falsifiability.html" >9. Section 6: Section VI: Falsifiability and Experimental Directions</a></li><li><a href="../articles/sorm-sections-section-07-shared-reality.html" >10. Section 7: Section VII: The Structure of Shared Reality — Frequency Attractors and Template Clustering</a></li><li><a href="../articles/sorm-sections-section-08-ontology-of-consciousness.html" >11. Section 8: Section VIII: The Ontology of Consciousness</a></li><li><a href="../articles/sorm-sections-section-09-death-and-continuity.html" >12. Section 9: Section IX: Death and Continuity</a></li><li><a href="../articles/sorm-sections-section-10-sine-wave-duty-cycle.html" class="active">13. Section 10: Section X: The Sine Wave and the Duty Cycle</a></li><li><a href="../articles/sorm-sections-section-11-heaven-nirvana.html" >14. Section 11: Section XI: Heaven, Nirvana, and Non-Physical Communities</a></li><li><a href="../articles/sorm-sections-section-12-practical-implications.html" >15. Section 12: Section XII: Practical Implications — Cultivating Frequency Synchronization</a></li><li><a href="../articles/sorm-sections-section-13-future-work.html" >16. Section 13: Section XIII: Future Work</a></li><li><a href="../articles/sorm-sections-section-14-genesis.html" >17. Section 14: Section XIV: Foundational Review and Genesis</a></li><li><a href="../articles/sorm-sections-section-15-comparative-analysis.html" >18. Section 15: Section XV: Comparative Analysis — Addressing the Great Mysteries</a></li><li><a href="../articles/sorm-sections-section-16-travelers-anomalies.html" >19. Section 16: Section XVI: Travelers, Anomalies, and the Reality of MWI Navigation</a></li><li><a href="../articles/sorm-sections-section-17-anomalous-phenomena.html" >20. Section 17: Section XVII: Anomalous Phenomena and the Mechanics of Consciousness Navigation</a></li><li><a href="../articles/sorm-sections-section-18-reduced-filtering.html" >21. Section 18: Section XVIII: Reduced Filtering and Perceptual Shifts — The Mechanics of Altered Rendering</a></li><li><a href="../articles/sorm-sections-section-19-dropping-the-filter.html" >22. Section 19: Section XIX: The Dropping of the Filter — Applied Phenomenology of ΨORM</a></li><li><a href="../articles/sorm-sections-section-20-group-vector-shifts.html" >23. Section 20: Section XX: Group Vector Shifts and the Reconfiguration of Rendered Reality</a></li><li><a href="../articles/sorm-sections-section-21-overlapping-attractor-basins.html" >24. Section 21: Section XXI: Overlapping Attractor Basins and the Perception of Shared Physical Reality</a></li><li><a href="../articles/sorm-sections-section-22-intentional-frequency-shift.html" >25. Section 22: Section XXII: Intentional Frequency Shift — The Practice of Navigating from A to B</a></li><li><a href="../articles/sorm-sections-section-23-frequency-alignment-group-vectors.html" >26. Section 23: Section XXIII: Frequency Alignment with Group Vectors — The Mechanism of Joining a New Attractor Basin</a></li><li><a href="../articles/sorm-sections-section-24-applied-frequency-modulation.html" >27. Section 24: Section XXIV: Applied Frequency Modulation — Practical Techniques for Intention Navigation</a></li><li><a href="../articles/sorm-sections-section-25-remote-viewing.html" >28. Section 25: Section XXV: Remote Viewing as Applied Consciousness Navigation</a></li><li><a href="../articles/sorm-sections-section-26-topography.html" >29. Section 26: Section XXVI: The Topography of the Configuration Space</a></li><li><a href="../articles/sorm-sections-section-27-discrete-states-of-consciousness-as-frequency-basins.html" >30. Section 27: Section XXVII: Discrete States of Consciousness as Frequency Basins</a></li><li><a href="../articles/sorm-sections-section-28-the-non-physical-state-a-client-mapped-geography-of-heaven.html" >31. Section 28: Section XXVIII: The Non-Physical State — A Client-Mapped Geography of Heaven</a></li><li><a href="../articles/sorm-sections-section-29-the-council-of-elders-and-karmic-review.html" >32. Section 29: Section XXIX: The Council of Elders and Karmic Review</a></li><li><a href="../articles/sorm-sections-section-30-soul-specializations-the-roles-of-advanced-souls.html" >33. Section 30: Section XXX: Soul Specializations — The Roles of Advanced Souls</a></li><li><a href="../articles/sorm-sections-section-31-the-ring-of-destiny-life-selection-and-body-choice.html" >34. Section 31: Section XXXI: The Ring of Destiny — Life Selection and Body Choice</a></li><li><a href="../articles/sorm-sections-section-32-the-colors-of-souls-and-levels-of-development.html" >35. Section 32: Section XXXII: The Colors of Souls and Levels of Development</a></li><li><a href="../articles/sorm-sections-section-33-the-experience-of-consciousness-at-death.html" >36. Section 33: Section XXXIII: The Experience of Consciousness at Death</a></li><li><a href="../articles/sorm-bridges-overview.html" >37. Bridges to Mainstream</a></li><li><a href="../articles/sorm-bridges-agnosticism-atheism-bridge.html" >38. ΨORM and Atheism/Agnosticism: A Bridge</a></li><li><a href="../articles/sorm-bridges-buddhism-bridge.html" >39. ΨORM and Buddhism: A Bridge</a></li><li><a href="../articles/sorm-bridges-christian-bridge.html" >40. ΨORM and the Christian Mystical Tradition: A Bridge</a></li><li><a href="../articles/sorm-bridges-daoism-bridge.html" >41. ΨORM and Daoism: A Bridge</a></li><li><a href="../articles/sorm-bridges-hinduism-bridge.html" >42. ΨORM and Hinduism: A Bridge</a></li><li><a href="../articles/sorm-bridges-islam-bridge.html" >43. ΨORM and Islam: A Bridge</a></li><li><a href="../articles/sorm-bridges-materialism-bridge.html" >44. ΨORM and Materialism: A Bridge</a></li><li><a href="../articles/sorm-bridges-new-age-bridge.html" >45. ΨORM and the New Age: A Bridge</a></li><li><a href="../articles/sorm-bridges-psychedelic-science-bridge.html" >46. ΨORM and Psychedelic Science: A Bridge</a></li><li><a href="../articles/sorm-bridges-science-empirical-bridge.html" >47. ΨORM and Science: A Bridge</a></li><li><a href="../articles/sorm-bridges.html" >48. Bridges to Mainstream</a></li><li><a href="../articles/sorm-glossary.html" >49. Glossary of Terms — ΨORM</a></li><li><a href="../articles/sorm-mathematical-formalization.html" >50. Mathematical Formalization of ΨORM</a></li><li><a href="../articles/sorm-predictions.html" >51. Consolidated Table of Falsifiable Predictions — ΨORM</a></li><li><a href="../articles/sorm-case-studies.html" >52. Case Studies — Applied ΨORM Practices</a></li><li><a href="../articles/sorm-ah-hah.html" >53. Summary of Ah-Hah Moments — ΨORM</a></li><li><a href="../articles/sorm-early-pdfs-early-pdfs-read-me.html" >54. Early Writings — The Archaeological Record of ΨORM</a></li><li><a href="../articles/sorm-roadmap.html" >55. ΨORM Roadmap</a></li><li><a href="../articles/sorm-changelog.html" >56. Changelog</a></li><li><a href="../articles/sorm-citation.html" >57. CITATION</a></li><li><a href="../articles/sorm-contributing.html" >58. Contributing to ΨORM</a></li><li><a href="../articles/sorm-code-of-conduct.html" >59. Contributor Covenant Code of Conduct</a></li><li><a href="../articles/sorm-security.html" >60. Security Policy</a></li><li><a href="../articles/sorm-feature-request.html" >61. feature request</a></li><li><a href="../articles/sorm-license.html" >62. LICENSE</a></li>
+    </ul>
+    
+    <h4>Start here</h4>
+    <ul><li><a href="../collections/the-domain.html" >The Domain</a></li><li><a href="../collections/for-new-visitors-read-this-first.html" >For New Visitors – Read This First</a></li><li><a href="../collections/an-authorized-majestic-disclosure.html" >MAJestic Disclosure</a></li><li><a href="../collections/terms-and-conventions.html" >Terms and Conventions</a></li></ul><h4>MAJestic &amp; extraterrestrials</h4>
+    <ul><li><a href="../collections/majestic-related-index.html" >MAJestic Related Index</a></li><li><a href="../collections/extraterrestrial-species-majestic-disclosure-real-information-no-disinformation.html" >Extraterrestrial Species</a></li><li><a href="../collections/type-1-grey-extraterrestrial-index-articles-space-majestic.html" >Type 1 Grey Extraterrestrials</a></li></ul><h4>How reality works</h4>
+    <ul><li><a href="../collections/world-line-travel-index.html" >World-Line Travel Index</a></li><li><a href="../collections/intention-and-prayer-campaigns-to-make-your-wishes-come-true.html" >Intention and Prayer Campaigns</a></li><li><a href="../collections/diy-teleortation-technique-hardware-do-it-yourself.html" >DIY – Do It Yourself Dimensional Portal Construction and Techniques</a></li><li><a href="../collections/gateway-techniques-hemi-sync-ffb.html" >Gateway Techniques (Hemi-Sync &amp; FFR)</a></li><li><a href="../collections/heaven.html" >Heaven</a></li><li><a href="../collections/past-life-regression-index.html" >Past Life Regression Index</a></li><li><a href="../collections/fate-luck-forecasting.html" >Fate Forecasting</a></li><li><a href="../collections/quantum-construction-video-series.html" >Quantum construction video series</a></li></ul><h4>Mysteries &amp; anomalies</h4>
+    <ul><li><a href="../collections/john-titor-index.html" >John Titor Index</a></li><li><a href="../collections/oopart-related-index.html" >OOPART Related Index</a></li></ul><h4>Guest contributors</h4>
+    <ul><li><a href="../collections/daegonmagus.html" >Daegonmagus</a></li><li><a href="../collections/pissedlizard.html" >PissedLizard</a></li></ul><h4>Patreon &amp; GitHub</h4>
+    <ul><li><a href="../collections/sorm.html" class="active">ΨORM: the Ψ-Ontic Reality Model</a></li><li><a href="../collections/patreon.html" >Patreon posts</a></li></ul><h4>About the source</h4>
+    <ul><li><a href="../collections/metallicman-questions-and-answers.html" >Questions and Answers</a></li><li><a href="../collections/the-grey-web.html" >The Grey Web</a></li><li><a href="../collections/about-me.html" >About Me</a></li></ul><h4>More</h4>
+    <ul><li><a href="../collections/more-related-articles.html" >More related articles</a></li></ul>
+    <p class="small"><a href="../browse.html">Browse every article →</a></p>
+    </div>
+  </aside>
+  <article>
+    <div class="ph">
+      <div class="crumbs"><a href="../index.html">Home</a> › <a href="../collections/sorm.html">ΨORM: the Ψ-Ontic Reality Model</a></div>
+      <h1>Section 10: Section X: The Sine Wave and the Duty Cycle</h1>
+      <div class="byline">
+        <span>Metallicman</span>
+        
+        <span>7 min read · 1,439 words</span>
+        
+        <span class="src"><a href="https://github.com/MyMetallicMan/SORM--Ontic-Reality-Model-/blob/develop/sections/section-10-sine-wave-duty-cycle.md" target="_blank" rel="noopener">Original ↗</a></span>
+      </div>
+      
+    </div>
+    <div class="notice">From the author's GitHub repository <a href="https://github.com/MyMetallicMan/SORM--Ontic-Reality-Model-" target="_blank" rel="noopener">MyMetallicMan/SORM--Ontic-Reality-Model-</a> (branch develop, fetched 2026-09-14).</div>
+    <div class="article-body"><p><strong>Version:</strong> 13.1    <br/>
+<strong>Author:</strong> Robert Vannrox    <br/>
+<strong>Date:</strong> September 13, 2026      </p>
+<hr/>
+<h2 id="x-1-overview">X.1 Overview</h2>
+<p>Consciousness does not exist solely in the physical state. It alternates between the physical basin and the in-between state. This alternation follows a natural rhythm — a sine wave.</p>
+<p>This section introduces the concept of the duty cycle, its relationship to brain state, and its implications for consciousness navigation.</p>
+<hr/>
+<h2 id="x-2-the-rhythm-of-consciousness">X.2 The Rhythm of Consciousness</h2>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Physical Phase</strong></td>
+<td>Consciousness is phase-locked to a biological receiver. Reality is rendered as physical experience.</td>
+</tr>
+<tr>
+<td><strong>In-Between Phase</strong></td>
+<td>Consciousness is decoupled from the biological receiver. Reality is experienced directly as frequency and information.</td>
+</tr>
+</tbody>
+</table>
+<p>The alternation between these two phases is continuous. It does not stop. It does not pause. It is the fundamental texture of consciousness itself.</p>
+<p><strong>The Ah-Hah Moment:</strong></p>
+<blockquote>
+<p><em>"Consciousness does not jump from moment to moment. It breathes — in and out of the physical, like a wave. And the breath never stops."</em></p>
+</blockquote>
+<hr/>
+<h2 id="x-3-the-duty-cycle">X.3 The Duty Cycle</h2>
+<p>The duty cycle refers to the proportion of time consciousness spends in the physical phase versus the in-between phase.</p>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>Proportion</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Physical</strong></td>
+<td>~50%</td>
+<td>Waking hours, active engagement with physical reality</td>
+</tr>
+<tr>
+<td><strong>In-Between</strong></td>
+<td>~50%</td>
+<td>The intervals between physical phases; sleep, dreaming, meditation, altered states</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Implication:</strong> The in-between state is not an exception — it is a fundamental part of existence. Consciousness navigates the configuration space in both states. At any given moment, roughly half of your experience is physical, and half is in-between.</p>
+<hr/>
+<h2 id="x-4-the-4-hz-benchmark-and-state-dependent-cycling">X.4 The 4 Hz Benchmark and State-Dependent Cycling</h2>
+<p>The "4 Hz" figure is a shorthand. It is a benchmark, not a universal constant.</p>
+<p>At 4 Hz, consciousness cycles four times per second. Four physical phases. Four in-between phases. This is the average rhythm of an alert, waking brain.</p>
+<p>But the actual rate of cycling is a function of the brain's state. The speed of transition from frozen moment to frozen moment is not fixed. It varies.</p>
+<table>
+<thead>
+<tr>
+<th>Brain State</th>
+<th>Approximate Cycle Rate</th>
+<th>EEG Correlate</th>
+<th>What It Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Alert, focused</strong></td>
+<td>Higher frequency (beta/gamma range, 12–30+ Hz)</td>
+<td>Beta (13–30 Hz), Gamma (30–100 Hz)</td>
+<td>Fast cycling. More physical phases per second. Dense, rapid rendering.</td>
+</tr>
+<tr>
+<td><strong>Relaxed, calm</strong></td>
+<td>Mid frequency (alpha range, 8–12 Hz)</td>
+<td>Alpha (8–12 Hz)</td>
+<td>Moderate cycling. Balanced.</td>
+</tr>
+<tr>
+<td><strong>Drowsy, drifting</strong></td>
+<td>Lower frequency (theta range, 4–7 Hz)</td>
+<td>Theta (4–7 Hz)</td>
+<td>Slower cycling. More time in the in-between.</td>
+</tr>
+<tr>
+<td><strong>Deep sleep</strong></td>
+<td>Very low frequency (delta range, 0.5–4 Hz)</td>
+<td>Delta (0.5–4 Hz)</td>
+<td>Slow cycling. Extended in-between periods.</td>
+</tr>
+<tr>
+<td><strong>Meditation</strong></td>
+<td>Variable</td>
+<td>Variable</td>
+<td>Can be trained. Can shift the balance.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The 4 Hz figure is a reference point.</strong> It is the average rate of an alert, waking brain. It is the rate at which the "shutter" of consciousness is opening and closing when you are engaged with the physical world.</p>
+<p><strong>When your brain state changes, the cycle rate changes.</strong> When you are alert, you cycle faster. When you are drowsy, you cycle slower. When you sleep, the cycle slows further, and the in-between periods dominate.</p>
+<p><strong>The Ah-Hah Moment:</strong></p>
+<blockquote>
+<p><em>"The 4 Hz figure is not a law. It is a benchmark. The actual rate is a function of your state. You cycle faster when alert, slower when drowsy, slower still when asleep. The flicker changes speed. But it never stops."</em></p>
+</blockquote>
+<hr/>
+<h2 id="x-5-the-eeg-correlates">X.5 The EEG Correlates</h2>
+<p>The cycle rate of consciousness correlates with the dominant frequency of brain activity as measured by EEG.</p>
+<table>
+<thead>
+<tr>
+<th>EEG Band</th>
+<th>Frequency Range</th>
+<th>Associated State</th>
+<th>ΨORM Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Delta</strong></td>
+<td>0.5–4 Hz</td>
+<td>Deep sleep</td>
+<td>Slow cycling. Extended in-between periods.</td>
+</tr>
+<tr>
+<td><strong>Theta</strong></td>
+<td>4–7 Hz</td>
+<td>Drowsiness, light sleep, meditation</td>
+<td>Slower cycling. Increased in-between access.</td>
+</tr>
+<tr>
+<td><strong>Alpha</strong></td>
+<td>8–12 Hz</td>
+<td>Relaxed wakefulness, calm focus</td>
+<td>Moderate cycling. Balanced.</td>
+</tr>
+<tr>
+<td><strong>Beta</strong></td>
+<td>13–30 Hz</td>
+<td>Active thinking, alert focus</td>
+<td>Faster cycling. Dense physical rendering.</td>
+</tr>
+<tr>
+<td><strong>Gamma</strong></td>
+<td>30–100 Hz</td>
+<td>High-level cognitive processing, peak attention</td>
+<td>Very fast cycling. Intense physical engagement.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The relationship is not one-to-one.</strong> The brain produces a complex mix of frequencies at any given moment. But the dominant rhythm corresponds to the dominant state of consciousness.</p>
+<p><strong>The Ah-Hah Moment:</strong></p>
+<blockquote>
+<p><em>"Your EEG is a window into your duty cycle. Delta means slow cycling. Theta means slower. Alpha means balanced. Beta means fast. Gamma means very fast. The brain state and the consciousness rhythm are coupled."</em></p>
+</blockquote>
+<hr/>
+<h2 id="x-6-altering-the-duty-cycle">X.6 Altering the Duty Cycle</h2>
+<p>The duty cycle can be altered intentionally through:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Meditation</strong></td>
+<td>Increases time in the in-between state. Slows the cycle.</td>
+</tr>
+<tr>
+<td><strong>Sleep Deprivation</strong></td>
+<td>Disrupts the natural cycle. Can shift the balance.</td>
+</tr>
+<tr>
+<td><strong>Altered States</strong></td>
+<td>Shifts the balance toward the in-between state.</td>
+</tr>
+<tr>
+<td><strong>Trauma</strong></td>
+<td>Can cause involuntary shifts in the cycle.</td>
+</tr>
+<tr>
+<td><strong>Pharmacological</strong></td>
+<td>Psychedelics reduce filtering; can alter the cycle rate.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The Ah-Hah Moment:</strong></p>
+<blockquote>
+<p><em>"ESP is not a supernatural gift. It is a natural consequence of spending more time in the in-between. The cycle can be trained. The balance can be shifted."</em></p>
+</blockquote>
+<hr/>
+<h2 id="x-7-the-role-of-sleep">X.7 The Role of Sleep</h2>
+<h3 id="the-necessity-of-sleep">The Necessity of Sleep</h3>
+<p>Sleep is not a biological inconvenience — it is an extended return to the in-between state. During sleep, the consciousness vector slows its cycling and spends more time decoupled from the biological receiver. This allows it to recharge and access the configuration space directly.</p>
+<h3 id="orm-mechanism">ΨORM Mechanism</h3>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Slowed Cycling</strong></td>
+<td>The cycle rate drops. The in-between periods lengthen.</td>
+</tr>
+<tr>
+<td><strong>Energy Restoration</strong></td>
+<td>The soul recharges its energy in the non-physical state.</td>
+</tr>
+<tr>
+<td><strong>Memory Processing</strong></td>
+<td>Experiences are consolidated into memory-garbons.</td>
+</tr>
+<tr>
+<td><strong>Dreaming</strong></td>
+<td>The soul accesses adjacent attractor basins and processes information.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-duty-cycle-and-sleep">The Duty Cycle and Sleep</h3>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Physical Phase</strong></td>
+<td>Waking hours — consciousness is phase-locked to the biological receiver. Fast cycling.</td>
+</tr>
+<tr>
+<td><strong>In-Between Phase</strong></td>
+<td>Sleep and dreaming — consciousness is partially decoupled. Slow cycling. Extended in-between periods.</td>
+</tr>
+<tr>
+<td><strong>Duty Cycle</strong></td>
+<td>The natural balance between physical and in-between states. The proportion remains roughly 50/50, but the rate changes.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sleep-and-healing">Sleep and Healing</h3>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Physical Healing</strong></td>
+<td>The body repairs itself during sleep.</td>
+</tr>
+<tr>
+<td><strong>Soul Healing</strong></td>
+<td>The soul is restored and refreshed.</td>
+</tr>
+<tr>
+<td><strong>Emotional Processing</strong></td>
+<td>Emotions are processed and integrated.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dreams-as-navigation">Dreams as Navigation</h3>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Accessing Adjacent Basins</strong></td>
+<td>During dreams, consciousness can access adjacent attractor basins.</td>
+</tr>
+<tr>
+<td><strong>Problem Solving</strong></td>
+<td>Dreams can provide solutions to problems.</td>
+</tr>
+<tr>
+<td><strong>Spiritual Communication</strong></td>
+<td>Guides and soulmates can communicate through dreams.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Client-Reported Experience:</strong></p>
+<blockquote>
+<p><em>"I begin by connecting myself to his divided nature here to more closely communicate with his light on Earth... I slip into his mind quite easily to deploy my energy."</em> — Journey of Souls</p>
+</blockquote>
+<p><strong>The Ah-Hah Moment:</strong></p>
+<blockquote>
+<p><em>"Sleep is not a pause — it is a return. Each night, you go home. Each morning, you return. The duty cycle is the rhythm of your existence. Sleep is when the rhythm slows, and the in-between state stretches."</em></p>
+</blockquote>
+<p><strong>See Also:</strong> Section XXVIII (The Non-Physical State — Healing and Orientation)</p>
+<hr/>
+<h2 id="x-8-the-non-physical-state">X.8 The Non-Physical State</h2>
+<h3 id="the-shower-of-healing">The Shower of Healing</h3>
+<p>Upon arrival in the non-physical state, souls undergo an energy restoration process.</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Energy Cleansing</strong></td>
+<td>Removal of negative imprints from the physical life.</td>
+</tr>
+<tr>
+<td><strong>Healing Beams</strong></td>
+<td>Directed energy to repair damaged soul energy.</td>
+</tr>
+<tr>
+<td><strong>Sound and Light Therapy</strong></td>
+<td>Vibrational and color healing.</td>
+</tr>
+<tr>
+<td><strong>Restoration</strong></td>
+<td>Return to full spiritual vitality.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Client-Reported Experience:</strong></p>
+<blockquote>
+<p><em>"I'm bathed and cleansed from my hurts... the light permeates through my soul... washing out most of the negative viruses."</em> — Journey of Souls</p>
+</blockquote>
+<h3 id="orientation-and-debriefing">Orientation and Debriefing</h3>
+<p>After healing, souls undergo an initial debriefing with their guide.</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Life Review</strong></td>
+<td>A preliminary review of the life just ended.</td>
+</tr>
+<tr>
+<td><strong>Emotional Release</strong></td>
+<td>Processing grief, regret, and unresolved issues.</td>
+</tr>
+<tr>
+<td><strong>Guidance</strong></td>
+<td>Gentle counseling about lessons learned.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The Ah-Hah Moment:</strong></p>
+<blockquote>
+<p><em>"Orientation is not judgment — it is understanding. The guide does not condemn; the guide helps the soul understand itself."</em></p>
+</blockquote>
+<hr/>
+<h2 id="x-9-falsifiability">X.9 Falsifiability</h2>
+<p>ΨORM predicts that:</p>
+<ol>
+<li><strong>The dominant EEG frequency will correlate with the rate of consciousness cycling.</strong> Higher-frequency bands (beta, gamma) will correspond to faster cycling; lower-frequency bands (delta, theta) will correspond to slower cycling.</li>
+<li><strong>Individuals who practice intentional duty cycle alteration will show measurable increases in frequency coherence (EEG/MEG) over time.</strong></li>
+<li><strong>Sleep and dreaming will correlate with measurable frequency shifts in the biological receiver.</strong> The cycle rate will drop during sleep.</li>
+<li><strong>The in-between state experiences will be consistent across individuals in deep hypnosis.</strong></li>
+</ol>
+<p>If no such correlations are found, these predictions would be falsified.</p>
+<hr/>
+<h2 id="summary">Summary</h2>
+<p>Section X introduces the sine wave rhythm of consciousness and the duty cycle. Consciousness alternates between the physical and in-between states. The proportion is roughly 50/50, but the rate of cycling is a function of brain state. The "4 Hz" figure is a benchmark for the alert waking state, not a universal constant. The cycle rate correlates with the dominant EEG frequency: delta (slow), theta (slower), alpha (moderate), beta (fast), gamma (very fast). Sleep is an extended period of slowed cycling, during which the in-between state dominates and the soul undergoes restoration, processing, and navigation. The duty cycle can be intentionally altered through meditation, sleep practice, and other methods. For a detailed exploration of the non-physical state, see Section XXVIII.# Section X: The Sine Wave and the 50% Duty Cycle</p></div>
+    
+    
+    <div class="appears"><b>Appears in</b><a href="../collections/sorm.html">ΨORM: the Ψ-Ontic Reality Model</a></div>
+    
+    <div class="pn">
+      <a class="prev" href="../articles/sorm-sections-section-09-death-and-continuity.html"><span class="k">← Previous</span><span class="t">Section 9: Section IX: Death and Continuity</span></a>
+      <a class="next" href="../articles/sorm-sections-section-11-heaven-nirvana.html"><span class="k">Next →</span><span class="t">Section 11: Section XI: Heaven, Nirvana, and Non-Physical Communities</span></a>
+    </div>
+  </article>
+  <aside class="side toc">
+    
+    <h4>Contents</h4>
+    <ul><li class=""><a href="#x-1-overview">X.1 Overview</a></li><li class=""><a href="#x-2-the-rhythm-of-consciousness">X.2 The Rhythm of Consciousness</a></li><li class=""><a href="#x-3-the-duty-cycle">X.3 The Duty Cycle</a></li><li class=""><a href="#x-4-the-4-hz-benchmark-and-state-dependent-cycling">X.4 The 4 Hz Benchmark and State-Dependent Cycling</a></li><li class=""><a href="#x-5-the-eeg-correlates">X.5 The EEG Correlates</a></li><li class=""><a href="#x-6-altering-the-duty-cycle">X.6 Altering the Duty Cycle</a></li><li class=""><a href="#x-7-the-role-of-sleep">X.7 The Role of Sleep</a></li><li class="l3"><a href="#the-necessity-of-sleep">The Necessity of Sleep</a></li><li class="l3"><a href="#orm-mechanism">ΨORM Mechanism</a></li><li class="l3"><a href="#the-duty-cycle-and-sleep">The Duty Cycle and Sleep</a></li><li class="l3"><a href="#sleep-and-healing">Sleep and Healing</a></li><li class="l3"><a href="#dreams-as-navigation">Dreams as Navigation</a></li><li class=""><a href="#x-8-the-non-physical-state">X.8 The Non-Physical State</a></li><li class="l3"><a href="#the-shower-of-healing">The Shower of Healing</a></li><li class="l3"><a href="#orientation-and-debriefing">Orientation and Debriefing</a></li><li class=""><a href="#x-9-falsifiability">X.9 Falsifiability</a></li><li class=""><a href="#summary">Summary</a></li></ul>
+    
+  </aside>
+</div>
+
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <span>The Domain Archive · a personal, offline backup of the reality &amp; extraterrestrial writing on <a href="https://metallicman.com/" target="_blank" rel="noopener">metallicman.com</a>.</span>
+    <span>All articles © their author (Metallicman and guest contributors). Archived 2026-09-14 05:15 UTC.</span>
+    <span><a href="../about.html">About this archive</a></span>
+  </div>
+</footer>
+<div class="overlay" id="search" role="dialog" aria-label="Search">
+  <div class="dialog">
+    <div class="inp">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" placeholder="Search titles, headings, tags…" autocomplete="off" spellcheck="false">
+      <div class="opts"><label><input type="checkbox" id="deep"> full text</label></div>
+    </div>
+    <div class="results"></div>
+    <div class="foot"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>↵</kbd> open</span><span><kbd>esc</kbd> close</span><span>431 articles indexed</span></div>
+  </div>
+</div>
+<div class="lightbox" id="lightbox"><img alt=""></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

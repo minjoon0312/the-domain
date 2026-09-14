@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-base="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The construction of a DIY dimensional portal for world-line travel (part 9) frequency visualization using Mandelbrot sets. · The Domain Archive</title>
+<meta name="description" content="Here we translate the frequencies of location into another form. You need to convert those numbers into a map that you can read, chart a course, and execute a travel algorithm.">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script>document.documentElement.classList.add("js");try{document.documentElement.setAttribute("data-theme",localStorage.getItem("tda-theme")||"dark")}catch(e){}</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html" title="The Domain Archive">
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.5"/><ellipse cx="16" cy="16" rx="13" ry="5" stroke="currentColor" stroke-width="1.2" transform="rotate(-25 16 16)"/><circle cx="16" cy="16" r="3.2" fill="currentColor"/></svg>
+      <span>The Domain Archive</span>
+    </a>
+    
+    <nav class="nav">
+      <a href="../index.html" >Home</a>
+      <div class="menu-wrap" id="menuWrap">
+        <button class="menu-btn " type="button" aria-expanded="false" aria-controls="mega">Browse <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="mega" id="mega">
+          <div class="mega-grid">
+      <div class="mega-col">
+        <h5>Start here</h5>
+        <a href="../collections/the-domain.html"><span>The Domain</span><small>33</small></a><a href="../collections/for-new-visitors-read-this-first.html"><span>For New Visitors – Read This First</span><small>14</small></a><a href="../collections/an-authorized-majestic-disclosure.html"><span>MAJestic Disclosure</span><small>49</small></a><a href="../collections/terms-and-conventions.html"><span>Terms and Conventions</span><small></small></a>
+      </div>
+      
+      <div class="mega-col">
+        <h5>MAJestic &amp; extraterrestrials</h5>
+        <a href="../collections/majestic-related-index.html"><span>MAJestic Related Index</span><small>86</small></a><a href="../collections/extraterrestrial-species-majestic-disclosure-real-information-no-disinformation.html"><span>Extraterrestrial Species</span><small>22</small></a><a href="../collections/type-1-grey-extraterrestrial-index-articles-space-majestic.html"><span>Type 1 Grey Extraterrestrials</span><small>23</small></a>
+      </div>
+      
+      <div class="mega-col">
+        <h5>How reality works</h5>
+        <a href="../collections/world-line-travel-index.html"><span>World-Line Travel Index</span><small>18</small></a><a href="../collections/intention-and-prayer-campaigns-to-make-your-wishes-come-true.html"><span>Intention and Prayer Campaigns</span><small>61</small></a><a href="../collections/diy-teleortation-technique-hardware-do-it-yourself.html"><span>DIY – Do It Yourself Dimensional Portal Construction and Techniques</span><small>10</small></a><a href="../collections/gateway-techniques-hemi-sync-ffb.html"><span>Gateway Techniques (Hemi-Sync &amp; FFR)</span><small>6</small></a><a href="../collections/heaven.html"><span>Heaven</span><small>17</small></a><a href="../collections/past-life-regression-index.html"><span>Past Life Regression Index</span><small>3</small></a><a href="../collections/fate-luck-forecasting.html"><span>Fate Forecasting</span><small>3</small></a><a href="../collections/quantum-construction-video-series.html"><span>Quantum construction video series</span><small>2</small></a>
+      </div>
+      
+      <div class="mega-col">
+        <h5>Mysteries &amp; anomalies</h5>
+        <a href="../collections/john-titor-index.html"><span>John Titor Index</span><small>9</small></a><a href="../collections/oopart-related-index.html"><span>OOPART Related Index</span><small>33</small></a>
+      </div>
+      
+      <div class="mega-col">
+        <h5>Guest contributors</h5>
+        <a href="../collections/daegonmagus.html"><span>Daegonmagus</span><small>34</small></a><a href="../collections/pissedlizard.html"><span>PissedLizard</span><small>3</small></a>
+      </div>
+      
+      <div class="mega-col">
+        <h5>Patreon &amp; GitHub</h5>
+        <a href="../collections/sorm.html"><span>ΨORM: the Ψ-Ontic Reality Model</span><small>62</small></a><a href="../collections/patreon.html"><span>Patreon posts</span><small></small></a>
+      </div>
+      
+      <div class="mega-col">
+        <h5>About the source</h5>
+        <a href="../collections/metallicman-questions-and-answers.html"><span>Questions and Answers</span><small>12</small></a><a href="../collections/the-grey-web.html"><span>The Grey Web</span><small></small></a><a href="../collections/about-me.html"><span>About Me</span><small>47</small></a>
+      </div>
+      
+      <div class="mega-col">
+        <h5>More</h5>
+        <a href="../collections/more-related-articles.html"><span>More related articles</span><small>27</small></a>
+      </div>
+      </div>
+          <div class="mega-foot"><a href="../browse.html">Browse every article →</a><a href="../timeline.html">Timeline</a><a href="../about.html">About this archive</a></div>
+        </div>
+      </div>
+      <a href="../timeline.html" >Timeline</a>
+      <a href="../about.html" >About</a>
+    </nav>
+    <div class="spacer"></div>
+    <button class="searchbtn" data-open-search type="button" aria-label="Search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <span class="lbl">Search the archive</span><kbd>⌘K</kbd>
+    </button>
+    <button class="iconbtn burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="sheet">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path class="l1" d="M4 7h16"/><path class="l2" d="M4 12h16"/><path class="l3" d="M4 17h16"/></svg>
+    </button>
+    <button class="iconbtn" id="themeBtn" type="button" title="Toggle light / dark" aria-label="Toggle theme">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </div>
+</header>
+<div class="sheet" id="sheet">
+  <div class="sheet-links"><a href="../index.html">Home</a><a href="../browse.html">Browse every article</a><a href="../timeline.html">Timeline</a><a href="../about.html">About this archive</a></div>
+  <div class="sheet-grid">
+      <div class="sheet-col">
+        <h5>Start here</h5>
+        <a href="../collections/the-domain.html"><span>The Domain</span><small>33</small></a><a href="../collections/for-new-visitors-read-this-first.html"><span>For New Visitors – Read This First</span><small>14</small></a><a href="../collections/an-authorized-majestic-disclosure.html"><span>MAJestic Disclosure</span><small>49</small></a><a href="../collections/terms-and-conventions.html"><span>Terms and Conventions</span><small></small></a>
+      </div>
+      
+      <div class="sheet-col">
+        <h5>MAJestic &amp; extraterrestrials</h5>
+        <a href="../collections/majestic-related-index.html"><span>MAJestic Related Index</span><small>86</small></a><a href="../collections/extraterrestrial-species-majestic-disclosure-real-information-no-disinformation.html"><span>Extraterrestrial Species</span><small>22</small></a><a href="../collections/type-1-grey-extraterrestrial-index-articles-space-majestic.html"><span>Type 1 Grey Extraterrestrials</span><small>23</small></a>
+      </div>
+      
+      <div class="sheet-col">
+        <h5>How reality works</h5>
+        <a href="../collections/world-line-travel-index.html"><span>World-Line Travel Index</span><small>18</small></a><a href="../collections/intention-and-prayer-campaigns-to-make-your-wishes-come-true.html"><span>Intention and Prayer Campaigns</span><small>61</small></a><a href="../collections/diy-teleortation-technique-hardware-do-it-yourself.html"><span>DIY – Do It Yourself Dimensional Portal Construction and Techniques</span><small>10</small></a><a href="../collections/gateway-techniques-hemi-sync-ffb.html"><span>Gateway Techniques (Hemi-Sync &amp; FFR)</span><small>6</small></a><a href="../collections/heaven.html"><span>Heaven</span><small>17</small></a><a href="../collections/past-life-regression-index.html"><span>Past Life Regression Index</span><small>3</small></a><a href="../collections/fate-luck-forecasting.html"><span>Fate Forecasting</span><small>3</small></a><a href="../collections/quantum-construction-video-series.html"><span>Quantum construction video series</span><small>2</small></a>
+      </div>
+      
+      <div class="sheet-col">
+        <h5>Mysteries &amp; anomalies</h5>
+        <a href="../collections/john-titor-index.html"><span>John Titor Index</span><small>9</small></a><a href="../collections/oopart-related-index.html"><span>OOPART Related Index</span><small>33</small></a>
+      </div>
+      
+      <div class="sheet-col">
+        <h5>Guest contributors</h5>
+        <a href="../collections/daegonmagus.html"><span>Daegonmagus</span><small>34</small></a><a href="../collections/pissedlizard.html"><span>PissedLizard</span><small>3</small></a>
+      </div>
+      
+      <div class="sheet-col">
+        <h5>Patreon &amp; GitHub</h5>
+        <a href="../collections/sorm.html"><span>ΨORM: the Ψ-Ontic Reality Model</span><small>62</small></a><a href="../collections/patreon.html"><span>Patreon posts</span><small></small></a>
+      </div>
+      
+      <div class="sheet-col">
+        <h5>About the source</h5>
+        <a href="../collections/metallicman-questions-and-answers.html"><span>Questions and Answers</span><small>12</small></a><a href="../collections/the-grey-web.html"><span>The Grey Web</span><small></small></a><a href="../collections/about-me.html"><span>About Me</span><small>47</small></a>
+      </div>
+      
+      <div class="sheet-col">
+        <h5>More</h5>
+        <a href="../collections/more-related-articles.html"><span>More related articles</span><small>27</small></a>
+      </div>
+      </div>
+</div>
+<div class="progress" id="progress"></div>
+<main>
+
+<div class="wrap layout three">
+  <aside class="side collapsible">
+    <button class="side-toggle" type="button" aria-expanded="false">☰ In this collection</button>
+    <div class="side-body">
+    
+    <h4>In this collection</h4>
+    <div class="small" style="margin-bottom:8px"><a class="cur" href="../collections/diy-teleortation-technique-hardware-do-it-yourself.html">DIY – Do It Yourself Dimensional Portal Construction and Techniques</a></div>
+    <ul>
+      <li><a href="../articles/so-you-want-to-make-your-very-own-home-grown-dimensional-world-line-vehi-7d3f15.html" >1. So you want to make your very own home-grown DIY dimensional world-line vehicle. Let’s talk about this. (Part 1)</a></li><li><a href="../articles/constructing-your-very-own-diy-dimensional-world-line-portal-the-frequen-64f0bb.html" >2. Constructing your very own DIY dimensional world-line portal; the frequencies of location (part 2)</a></li><li><a href="../articles/constructing-your-very-own-diy-dimensional-world-line-portal-measuring-a-0d08ee.html" >3. Constructing your very own DIY dimensional world-line portal; measuring and creating frequency profiles of location (part 3)</a></li><li><a href="../articles/constructing-your-very-own-diy-dimensional-portal-for-world-line-crossov-6886b4.html" >4. Constructing your very own DIY Dimensional portal for world-line crossovers; the teleportation mechanism (part 4)</a></li><li><a href="../articles/constructing-your-very-own-diy-world-line-dimensional-portal-the-mechani-1ae2f6.html" >5. Constructing your very own DIY world-line dimensional portal; the mechanism that slides a person into a new reality (part 5)</a></li><li><a href="../articles/constructing-your-very-own-dimensional-teleportation-portal-for-world-li-d25912.html" >6. Constructing your very own DIY dimensional teleportation portal for world-line travel; creating the magnetic field generator (part 6)</a></li><li><a href="../articles/creating-your-very-own-diy-dimensional-portal-for-world-line-access-and-ec9192.html" >7. Creating your very own DIY dimensional portal for world-line access and teleportation (part 7); traveler notes</a></li><li><a href="../articles/constructing-a-diy-dimensional-world-line-portal-part-7-a-discussion-on-af204e.html" >8. Constructing a DIY dimensional world-line portal (part 8); A discussion on indexing coordinates</a></li><li><a href="../articles/the-construction-of-a-diy-dimensional-portal-for-world-line-travel-part-274d5a.html" class="active">9. The construction of a DIY dimensional portal for world-line travel (part 9) frequency visualization using Mandelbrot sets.</a></li><li><a href="../articles/calculating-the-geometry-of-the-diy-dimensional-portal-egress-station.html" >10. Part ten – Calculating the geometry of the DIY dimensional portal egress station.</a></li>
+    </ul>
+    
+    <h4>Start here</h4>
+    <ul><li><a href="../collections/the-domain.html" >The Domain</a></li><li><a href="../collections/for-new-visitors-read-this-first.html" >For New Visitors – Read This First</a></li><li><a href="../collections/an-authorized-majestic-disclosure.html" >MAJestic Disclosure</a></li><li><a href="../collections/terms-and-conventions.html" >Terms and Conventions</a></li></ul><h4>MAJestic &amp; extraterrestrials</h4>
+    <ul><li><a href="../collections/majestic-related-index.html" >MAJestic Related Index</a></li><li><a href="../collections/extraterrestrial-species-majestic-disclosure-real-information-no-disinformation.html" >Extraterrestrial Species</a></li><li><a href="../collections/type-1-grey-extraterrestrial-index-articles-space-majestic.html" >Type 1 Grey Extraterrestrials</a></li></ul><h4>How reality works</h4>
+    <ul><li><a href="../collections/world-line-travel-index.html" >World-Line Travel Index</a></li><li><a href="../collections/intention-and-prayer-campaigns-to-make-your-wishes-come-true.html" >Intention and Prayer Campaigns</a></li><li><a href="../collections/diy-teleortation-technique-hardware-do-it-yourself.html" class="active">DIY – Do It Yourself Dimensional Portal Construction and Techniques</a></li><li><a href="../collections/gateway-techniques-hemi-sync-ffb.html" >Gateway Techniques (Hemi-Sync &amp; FFR)</a></li><li><a href="../collections/heaven.html" >Heaven</a></li><li><a href="../collections/past-life-regression-index.html" >Past Life Regression Index</a></li><li><a href="../collections/fate-luck-forecasting.html" >Fate Forecasting</a></li><li><a href="../collections/quantum-construction-video-series.html" >Quantum construction video series</a></li></ul><h4>Mysteries &amp; anomalies</h4>
+    <ul><li><a href="../collections/john-titor-index.html" >John Titor Index</a></li><li><a href="../collections/oopart-related-index.html" >OOPART Related Index</a></li></ul><h4>Guest contributors</h4>
+    <ul><li><a href="../collections/daegonmagus.html" >Daegonmagus</a></li><li><a href="../collections/pissedlizard.html" >PissedLizard</a></li></ul><h4>Patreon &amp; GitHub</h4>
+    <ul><li><a href="../collections/sorm.html" >ΨORM: the Ψ-Ontic Reality Model</a></li><li><a href="../collections/patreon.html" >Patreon posts</a></li></ul><h4>About the source</h4>
+    <ul><li><a href="../collections/metallicman-questions-and-answers.html" >Questions and Answers</a></li><li><a href="../collections/the-grey-web.html" >The Grey Web</a></li><li><a href="../collections/about-me.html" >About Me</a></li></ul><h4>More</h4>
+    <ul><li><a href="../collections/more-related-articles.html" >More related articles</a></li></ul>
+    <p class="small"><a href="../browse.html">Browse every article →</a></p>
+    </div>
+  </aside>
+  <article>
+    <div class="ph">
+      <div class="crumbs"><a href="../index.html">Home</a> › <a href="../collections/diy-teleortation-technique-hardware-do-it-yourself.html">DIY – Do It Yourself Dimensional Portal Construction and Techniques</a></div>
+      <h1>The construction of a DIY dimensional portal for world-line travel (part 9) frequency visualization using Mandelbrot sets.</h1>
+      <div class="byline">
+        <span>Metallicman</span>
+        <span>21 July 2020</span>
+        <span>8 min read · 1,862 words</span>
+        
+        <span class="src"><a href="https://metallicman.com/laoban4site/the-construction-of-a-diy-dimensional-portal-for-world-line-travel-part-9-frequency-visualization-using-cymatics/" target="_blank" rel="noopener">Original ↗</a></span>
+      </div>
+      <div class="tags"><span class="pill">adventure</span><span class="pill">cymatics</span><span class="pill">dimensional</span><span class="pill">diy</span><span class="pill">frequency</span><span class="pill">majestic</span><span class="pill">mandelbrot-set</span><span class="pill">manipulation</span><span class="pill">portal</span><span class="pill">time</span><span class="pill">time-travel</span><span class="pill">travel</span></div>
+    </div>
+    
+    <div class="article-body"><p class="wp-block-paragraph">Here, in this post we are going to take a look at ways to convert the “frequencies of location” into a map with coordinates.</p>
+<p class="wp-block-paragraph">There is no right or wrong way to do this. In fact, there are many, many ways. Each with it’s own benefits and liabilities.</p>
+<h2 class="wp-block-heading" id="consider-this-scenario">Consider this scenario</h2>
+<p class="wp-block-paragraph">It’s easy enough to imagine a map with two sets of geographical coordinates. Right?</p>
+<figure class="wp-block-image size-large"><img alt="Conventional mapping of Geo-positioning coordinates." class="wp-image-35322" data-original="https://metallicman.com/wp-content/uploads/2020/07/geologic-mapping-1024x655.jpg" height="655" loading="lazy" src="../assets/img/the-construction-of-a-diy-dimensional-portal-for-world-line-travel-part-274d5a/geologic-mapping-1024x655.jpg" width="1024"/><figcaption>Conventional mapping of Geo-positioning coordinates.</figcaption></figure>
+<p class="wp-block-paragraph">Now, add time. Where each coordinate can go “into the past”, stay in the present, or “move into the future”.</p>
+<figure class="wp-block-image size-large"><img alt="Adding coordinates that represent time at a given geographical location." class="wp-image-35324" data-original="https://metallicman.com/wp-content/uploads/2020/07/time-mapping-1024x655.jpg" height="655" loading="lazy" src="../assets/img/the-construction-of-a-diy-dimensional-portal-for-world-line-travel-part-274d5a/time-mapping-1024x655.jpg" width="1024"/><figcaption>Adding coordinates that represent time at a given geographical location.</figcaption></figure>
+<p class="wp-block-paragraph">Now, add an entirely new set of criteria. It’s a big enormous set that describes variations in a world-line, for each coordinate. And the variations are nearly infinite, so it’s a very wide and open-ended coordinate. The only way that you can reasonably control all the many, many variations of a world-line variation is comparative. Using the current baseline, what is the delta changes to it?</p>
+<figure class="wp-block-image size-large"><img alt="Adding the coordinates of world-line variations to the map." class="wp-image-35327" data-original="https://metallicman.com/wp-content/uploads/2020/07/world-line-variations-1024x655.jpg" height="655" loading="lazy" src="../assets/img/the-construction-of-a-diy-dimensional-portal-for-world-line-travel-part-274d5a/world-line-variations-1024x655.jpg" width="1024"/><figcaption>Adding the coordinates of world-line variations to the map.</figcaption></figure>
+<p class="wp-block-paragraph">When you break things down simply, it really isn’t that difficult.</p>
+<p class="wp-block-paragraph">The coordinate system that you use has really three major components to it. These are as described above. They are [1] geographic location, [2] time, and [3] world-line variation from egress coordinates. </p>
+<p class="wp-block-paragraph">Thus…</p>
+<p class="has-background has-text-align-center has-yellow-background-color wp-block-paragraph"><strong>Coordinate = [1] location + [2] time + [3] world-line variation.</strong></p>
+<h2 class="wp-block-heading" id="converting-frequencies-into-something-that-you-can-map">Converting frequencies into something that you can map</h2>
+<p class="wp-block-paragraph">Unfortunately, the system that we have laid out describes the collection of frequencies of location with an isolation of the frequencies associated with the traveler. We need to convert that into a usable map.</p>
+<p class="wp-block-paragraph">We need to, don’t you know.</p>
+<p class="wp-block-paragraph">Well, it’s going to be pretty difficult to identify where you are in the enormous MWI. It’s darn near impossible to identify who you are relative to a near infinite number of world-lines that surround you. Not to mention all the variations and the changes associated with a destination coordinate. </p>
+<p class="wp-block-paragraph">It will look like a long string of numbers, in a long, thick book. </p>
+<p class="wp-block-paragraph">And because of this, it really isn’t very useful. You need to convert those numbers into a map that you can read, chart a course, and execute a travel algorithm.  </p>
+<p class="wp-block-paragraph">Here we talk about this.</p>
+<h2 class="wp-block-heading" id="why-bother">Why bother?</h2>
+<p class="wp-block-paragraph">When I entered the fixed dimensional portal so many years back, the destination coordinates were in the form of long strings of numbers on bound print outs. It was the height of technology at the time, and the Commander made tweaks to the destination values upon reviewing my printed out handout.</p>
+<p class="wp-block-paragraph">Here is a bound stack of computer printout sheets nearly identical to what was used when I first entered the fixed dimensional portal…</p>
+<figure class="wp-block-image size-large"><img alt="Bound stack of computer printout sheets that described the destination coordinates that I was to be sent to." class="wp-image-35294" data-original="https://metallicman.com/wp-content/uploads/2020/07/SNAG-GIF-00007-7-20-2020.gif" height="856" loading="lazy" src="../assets/img/the-construction-of-a-diy-dimensional-portal-for-world-line-travel-part-274d5a/SNAG-GIF-00007-7-20-2020.gif" width="587"/><figcaption>Bound stack of computer printout sheets that described the destination coordinates that I was to be sent to.</figcaption></figure>
+<p class="wp-block-paragraph">In those days, most computers did not have a monitor or screen. Those few that did were pretty much a visual display that showed green colored text on a black background. Instead, the worker would sit behind a “terminal” and type. It in many ways resembled an electric typewriter, and had the added advantage of leaving a defined paper trail record of your keystrokes.</p>
+<p class="wp-block-paragraph">It looked something like this…</p>
+<figure class="wp-block-image size-large"><img alt="Late 1970's to the early 1980's high technology in computers and office equipment." class="wp-image-35296" data-original="https://metallicman.com/wp-content/uploads/2020/07/SNAG-GIF-00008-7-20-2020-1024x707.gif" height="707" loading="lazy" src="../assets/img/the-construction-of-a-diy-dimensional-portal-for-world-line-travel-part-274d5a/SNAG-GIF-00008-7-20-2020-1024x707.gif" width="1024"/><figcaption>Late 1970’s to the early 1980’s high technology in computers and office equipment.</figcaption></figure>
+<p class="wp-block-paragraph">At that time, there was little option to do anything else. Visualization of large sets of data, or other systems for better and more understandable information retention and exchange was embryonic. We just used the systems available to us, as crude as they were at the time.</p>
+<p class="wp-block-paragraph">It’s not that the visualization of large data sets was unknown, it’s just that we didn’t have the tools necessary to organize the data.</p>
+<pre class="wp-block-preformatted">The first instances of infographics as we know them today – as data made visual – dates back to the late 1700s with a chart of wheat prices and labor wages. The creator, <a href="https://cn.bing.com/search?q=William+Playfair&amp;filters=sid%3adacb4a1f-6dc2-4c5f-3898-ff28d6aede71&amp;form=ENTLNK" rel="noopener" target="_blank">William Playfair</a>, might be considered the father of modern day infographics.</pre>
+<p class="wp-block-paragraph">The key to infographics is that the brain processes images more readily than words: A picture really was worth a thousand words. </p>
+<p class="wp-block-paragraph">For instance, here is an infographic that discusses slavery in the Southern United States prior to the American Civil War;</p>
+<figure class="wp-block-image size-large"><img alt="Infographic example." class="wp-image-35300" data-original="https://metallicman.com/wp-content/uploads/2020/07/SNAG-GIF-00009-7-20-2020.gif" height="746" loading="lazy" src="../assets/img/the-construction-of-a-diy-dimensional-portal-for-world-line-travel-part-274d5a/SNAG-GIF-00009-7-20-2020.gif" width="901"/><figcaption>Infographic example.</figcaption></figure>
+<p class="wp-block-paragraph">In the example above, you can clearly see where Slavery was the most prevalent, and where it was scarce. You can also be able to deduce and extrapolate information from this graphic. That is the benefits of an infographic as opposed to large streams of numbers.</p>
+<h2 class="wp-block-heading" id="the-advantage-of-visualization-of-large-complex-number-sets">The advantage of visualization of large complex number sets</h2>
+<p class="wp-block-paragraph">As computer technology became more and more sophisticated, a new branch of technology came into being. This was known as “information visualization”, and most reader have probably heard of it. Because “infographics” is a well understood off-shoot of this technology.</p>
+<p class="wp-block-paragraph">The importance of this should not be overlooked.</p>
+<p class="wp-block-paragraph">Relevant data sets would be highlighted, while other data sets could be ignored.  As such, there are many different shapes and forms that they can be displayed into. The best one depends on the application.</p>
+<p class="wp-block-paragraph">For instance, here is a “tree” data visualization style.</p>
+<figure class="wp-block-image size-large"><img alt='A complex data set visualized using "tree" structure and organization.' class="wp-image-35303" data-original="https://metallicman.com/wp-content/uploads/2020/07/SNAG-GIF-00010-7-20-2020.gif" height="456" loading="lazy" src="../assets/img/the-construction-of-a-diy-dimensional-portal-for-world-line-travel-part-274d5a/SNAG-GIF-00010-7-20-2020.gif" width="564"/><figcaption>A complex data set visualized using “tree” structure and organization.</figcaption></figure>
+<p class="wp-block-paragraph">And here is a “cluster” visualization style.</p>
+<figure class="wp-block-image size-large"><img alt="Cluster visualization style." class="wp-image-35305" data-original="https://metallicman.com/wp-content/uploads/2020/07/SNAG-GIF-00011-7-20-2020-1024x581.gif" height="581" loading="lazy" src="../assets/img/the-construction-of-a-diy-dimensional-portal-for-world-line-travel-part-274d5a/SNAG-GIF-00011-7-20-2020-1024x581.gif" width="1024"/><figcaption>Cluster visualization style.</figcaption></figure>
+<p class="wp-block-paragraph">In regards to visualization of the enormous sets of data associated with world-line portal coordinates, it is important that the visualization be such that it is easy to understand, and equally easy to plot out destinations.</p>
+<h2 class="wp-block-heading" id="visualizing-frequencies">Visualizing frequencies</h2>
+<p class="wp-block-paragraph">This technology has actually been around for a while. Anyone who has any of a zillion audio players on their computer can observe the ever changing music (frequencies of sound) depicted in eye-catching arrays for amusement purposes.</p>
+<figure class="wp-block-image size-large"><img alt="In the 1980's the amplitude of various frequencies were isolated and presented in a bar-code format as lighted LED bars." class="wp-image-35331" data-original="https://metallicman.com/wp-content/uploads/2020/07/DIY-AS1608-Music-Spectrum-Audio-Spectrum-Display-LED-Flashing-Light-Kit-Decor-For-Car-Home-Bar.jpg" height="600" loading="lazy" src="../assets/img/the-construction-of-a-diy-dimensional-portal-for-world-line-travel-part-274d5a/023f0806.jpg" width="600"/><figcaption>In the 1980’s the amplitude of various frequencies were isolated and presented in a bar-code format as lighted LED bars. Here, 16 frequencies are shown with the various amplitudes of the isolated signals.</figcaption></figure>
+<p class="wp-block-paragraph">In these applications, we watch with amusement how the visual designs change with the changes in the music. Fun, huh?</p>
+<p class="wp-block-paragraph">But it gets old.</p>
+<p class="wp-block-paragraph">What we want is something similar, but quite different. We do not want to watch the frequencies of location change. We only want to see what the frequencies of location are. Then “freeze it” and then manipulate each one precisely to obtain our objectives (what ever they might be)…</p>
+<ul class="wp-block-list"><li>Geographic</li><li>Time</li><li>World-line</li></ul>
+<p class="wp-block-paragraph">So what we need is a software program that will take all theses frequencies, broken down into a large number of very tiny separate frequencies, and display that in a pictorial format.</p>
+<h2 class="wp-block-heading" id="what-we-need-is-a-special-map-display">What we need is a special map display</h2>
+<p class="wp-block-paragraph">What we want is a display of all the frequencies of location, compared to amplitude. Something along these lines…</p>
+<figure class="wp-block-image size-large is-resized"><img alt="Graph of amplitude of various frequencies at a set point in time." class="wp-image-35334" data-original="https://metallicman.com/wp-content/uploads/2020/07/Evolution-of-the-vibration-amplitude-Figure-0-1-Frequency-spectrum-of-vibration-amplitude_Q320.jpg" height="615" loading="lazy" src="../assets/img/the-construction-of-a-diy-dimensional-portal-for-world-line-travel-part-274d5a/e1fe356b.jpg" width="615"/><figcaption>Graph of amplitude of various frequencies at a set point in time.</figcaption></figure>
+<p class="wp-block-paragraph">But with a display of two other characteristics. So instead of just attenuation and frequency, we can also display  (in color, and along the Y-axis) timbre, and pitch (to use audio terms) at any frozen moment in time.</p>
+<p class="has-background has-yellow-background-color wp-block-paragraph"><strong>A coordinate of location can be described by five characteristics: Wavelength, Amplitude, Time-Period, Frequency and Velocity.</strong></p>
+<h2 class="wp-block-heading" id="mandelbrot-set">Mandelbrot set</h2>
+<p class="wp-block-paragraph">If you manage to plot out these data visualizations you might be surprised to discover that they start to appear as Mandelbrot sets.</p>
+<figure class="wp-block-image size-large"><img alt="A mandelbrot set" class="wp-image-35307" data-original="https://metallicman.com/wp-content/uploads/2020/07/SNAG-GIF-00012-7-20-2020-1024x636.gif" height="636" loading="lazy" src="../assets/img/the-construction-of-a-diy-dimensional-portal-for-world-line-travel-part-274d5a/SNAG-GIF-00012-7-20-2020-1024x636.gif" width="1024"/><figcaption>A mandelbrot set.</figcaption></figure>
+<pre class="wp-block-preformatted">The Mandelbrot set is the set of complex numbers c for which the function fc(z)=z²+c does not diverge when iterated from z=0, i.e., for which the sequence fc(0), fc(fc(0)), etc., remains bounded in absolute value. Its definition is credited to Adrien Douady who named it in tribute to the mathematician Benoit Mandelbrot. The set is connected to a Julia set, and related Julia sets produce similarly complex fractal shapes.
+
+-<a href="http://en.wikipedia.org/wiki/Mandelbrot_set" rel="noopener" target="_blank"><em>Wikipedia</em></a></pre>
+<p class="wp-block-paragraph">Without getting to involved in the mathematics involved, any set of coordinates (which are the gravitational frequencies measured at the portal) can be reduced to equations. These are equations of location, and can be simplified to involve complex numbers.</p>
+<ul class="wp-block-list"><li><a aria-label="undefined (opens in a new tab)" href="https://stackoverflow.com/questions/10358252/why-are-frequencies-represented-as-complex-numbers" rel="noopener" target="_blank">Why are frequencies represented as complex numbers?</a></li><li><a href="https://math.stackexchange.com/questions/285520/where-exactly-are-complex-numbers-used-in-the-real-world" rel="noopener" target="_blank">Soft question – “Where” exactly are complex numbers used …</a></li><li><a href="https://eepower.com/power-electronics-textbook/vol-i-electrical-power-systems-design/chapter-2-analysis-ac-systems/complex-numbers-phasors-and-phase-shift/" rel="noopener" target="_blank">Complex Numbers, Phasors And Phase Shift</a></li><li><a href="https://www.dsprelated.com/freebooks/mdft/Complex_Sinusoids.html" rel="noopener" target="_blank">Complex Sinusoids | Mathematics of the DFT</a></li><li><a href="https://www.researchgate.net/post/What_does_the_complex_eigen-frequency_imply" rel="noopener" target="_blank">What does the complex eigen-frequency imply?</a></li><li><a href="http://farside.ph.utexas.edu/teaching/315/Waves/node88.html" rel="noopener" target="_blank">Representation of Waves via Complex Numbers</a></li></ul>
+<p class="wp-block-paragraph">Now, the purpose of this conversion is to help visualize the components of the various frequencies so that changes and alterations can be made. Once these groupings are identified, then they can be altered so that the actual data is used when defining coordinate changes.</p>
+<p class="wp-block-paragraph">It works something like this…</p>
+<figure class="wp-block-image size-large"><img alt='Clusters shown within the Mandelbrot set can be useful to alter and revise coordinates. For instance, a primary bulb might represent the characteristics of a given time, while "antennas" might represent attributes of a given world-line.' class="wp-image-35311" data-original="https://metallicman.com/wp-content/uploads/2020/07/Components-of-Mandelbrot-4-SOME-PROPERTIES-OF-MANDELBROT-SET-In-this-section-we-1.png" height="476" loading="lazy" src="../assets/img/the-construction-of-a-diy-dimensional-portal-for-world-line-travel-part-274d5a/Components-of-Mandelbrot-4-SOME-PROPERTIES-OF-MANDELBROT-SET-In-this-section-we-1.png" width="651"/><figcaption>Clusters shown within the Mandelbrot set can be useful to alter and revise coordinates. For instance, a primary bulb might represent the characteristics of a given time, while “antennas” might represent attributes of a given world-line.</figcaption></figure>
+<p class="wp-block-paragraph">So, in short, we can use mathematics and convert the frequencies of location into another form using complex numbers. Then we can graph the result. It will appear as a Mandelbrot set.</p>
+<p class="wp-block-paragraph">Through a series of experiments, we should be able to identify which characteristics of the Mandelbrot set has the greatest relevance for us, and then modify the destination coordinates appropriately.</p>
+<p class="wp-block-paragraph">But…</p>
+<p class="wp-block-paragraph">But there is more…</p>
+<h2 class="wp-block-heading" id="fractals">Fractals</h2>
+<p class="wp-block-paragraph">If you study the Mandelbrot set you might be able to identify fractals with “self similarity”. These little mathematical nuances can help you determine the relative stability of a world-line.</p>
+<p class="wp-block-paragraph">Stability? What are you talking about?</p>
+<p class="wp-block-paragraph">I am talking about the anchoring of world-lines, and how world-lines tend to cluster together. Our consciousness tend to cycle through world-lines rather rapidly. So the moment you enter a new world-line, you are off on the way to other ones.</p>
+<p class="wp-block-paragraph">It’s called “time”, don’t you know.</p>
+<p class="wp-block-paragraph">Well, if we want a world-line, say where the most popular food is pineapple on pizza (why? Why Lord, why?) and when we get there, we suddenly discover after a few seconds that no one eats pineapple on pizza. And so we think, “WTF? What happened?”</p>
+<figure class="wp-block-image size-large"><img alt="The abomination of pineapple on pizza. " class="wp-image-35343" data-original="https://metallicman.com/wp-content/uploads/2020/07/bacon-cheddar-and-pineapple-pizza-18520_l-1.jpeg" height="409" loading="lazy" src="../assets/img/constructing-a-diy-dimensional-world-line-portal-part-7-a-discussion-on-af204e/bacon-cheddar-and-pineapple-pizza-18520_l.jpeg" width="614"/><figcaption>The abomination of pineapple on pizza. </figcaption></figure>
+<p class="wp-block-paragraph">What happened was that we arrived at our destination world-line, but it was not stable.</p>
+<p class="wp-block-paragraph">So we want stability, and thus we want to find forms and shapes within the Mandelbrot set that are prone for fractal behavior.</p>
+<pre class="wp-block-preformatted">In mathematics, a fractal is a self-similar subset of Euclidean space whose fractal dimension strictly exceeds its topological dimension. Fractals appear the same at different levels, as illustrated in successive magnifications of the Mandelbrot set. 
+
+Fractals exhibit similar patterns at increasingly small scales called self similarity, also known as expanding symmetry or unfolding symmetry; if this replication is exactly the same at every scale, as in the Menger sponge, it is called affine self-similar. Fractal geometry lies within the mathematical branch of measure theory.
+
+-<a href="http://en.wikipedia.org/wiki/Fractal" rel="noopener" target="_blank"><em>Wikipedia</em></a></pre>
+<p class="wp-block-paragraph">To find specific values to manipulate during the visualization of the data set, you will find that other mathematical manipulations might become useful. Such is the case with fractals.</p>
+<figure class="wp-block-image size-large"><img alt="Higuchi and Katz fractal." class="wp-image-35316" data-original="https://metallicman.com/wp-content/uploads/2020/07/SNAG-GIF-00014-7-20-2020.gif" height="508" loading="lazy" src="../assets/img/the-construction-of-a-diy-dimensional-portal-for-world-line-travel-part-274d5a/SNAG-GIF-00014-7-20-2020.gif" width="930"/><figcaption>Higuchi and Katz fractal.</figcaption></figure>
+<h2 class="wp-block-heading" id="conclusion">Conclusion</h2>
+<p class="wp-block-paragraph">By converting the frequencies of location into Mandelbrot sets, we can create a map that we can use to plot our travel through the MWI. This is true whether it is geographical, involve time-travel or exploring the near-infinite variations of different world-lines.</p>
+<p class="wp-block-paragraph">Happy exploring.</p>
+<figure class="wp-block-image size-large"><img alt="Happy exploring." class="wp-image-35345" data-original="https://metallicman.com/wp-content/uploads/2020/07/tumblr_oiiiviXmWO1shc1wyo1_1280-1024x818.jpg" height="818" loading="lazy" src="../assets/img/the-construction-of-a-diy-dimensional-portal-for-world-line-travel-part-274d5a/tumblr_oiiiviXmWO1shc1wyo1_1280-1024x818.jpg" width="1024"/><figcaption>Happy exploring.</figcaption></figure></div>
+    
+    
+    <div class="appears"><b>Appears in</b><a href="../collections/diy-teleortation-technique-hardware-do-it-yourself.html">DIY – Do It Yourself Dimensional Portal Construction and Techniques</a></div>
+    
+    <div class="pn">
+      <a class="prev" href="../articles/constructing-a-diy-dimensional-world-line-portal-part-7-a-discussion-on-af204e.html"><span class="k">← Previous</span><span class="t">Constructing a DIY dimensional world-line portal (part 8); A discussion on indexing coordinates</span></a>
+      <a class="next" href="../articles/calculating-the-geometry-of-the-diy-dimensional-portal-egress-station.html"><span class="k">Next →</span><span class="t">Part ten – Calculating the geometry of the DIY dimensional portal egress station.</span></a>
+    </div>
+  </article>
+  <aside class="side toc">
+    
+    <h4>Contents</h4>
+    <ul><li class=""><a href="#consider-this-scenario">Consider this scenario</a></li><li class=""><a href="#converting-frequencies-into-something-that-you-can-map">Converting frequencies into something that you can map</a></li><li class=""><a href="#why-bother">Why bother?</a></li><li class=""><a href="#the-advantage-of-visualization-of-large-complex-number-sets">The advantage of visualization of large complex number sets</a></li><li class=""><a href="#visualizing-frequencies">Visualizing frequencies</a></li><li class=""><a href="#what-we-need-is-a-special-map-display">What we need is a special map display</a></li><li class=""><a href="#mandelbrot-set">Mandelbrot set</a></li><li class=""><a href="#fractals">Fractals</a></li><li class=""><a href="#conclusion">Conclusion</a></li></ul>
+    
+  </aside>
+</div>
+
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <span>The Domain Archive · a personal, offline backup of the reality &amp; extraterrestrial writing on <a href="https://metallicman.com/" target="_blank" rel="noopener">metallicman.com</a>.</span>
+    <span>All articles © their author (Metallicman and guest contributors). Archived 2026-09-14 05:15 UTC.</span>
+    <span><a href="../about.html">About this archive</a></span>
+  </div>
+</footer>
+<div class="overlay" id="search" role="dialog" aria-label="Search">
+  <div class="dialog">
+    <div class="inp">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" placeholder="Search titles, headings, tags…" autocomplete="off" spellcheck="false">
+      <div class="opts"><label><input type="checkbox" id="deep"> full text</label></div>
+    </div>
+    <div class="results"></div>
+    <div class="foot"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>↵</kbd> open</span><span><kbd>esc</kbd> close</span><span>431 articles indexed</span></div>
+  </div>
+</div>
+<div class="lightbox" id="lightbox"><img alt=""></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>
