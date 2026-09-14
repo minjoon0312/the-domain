@@ -15,6 +15,8 @@
     setTimeout(function () { root.classList.remove("theme-anim"); tbtn.classList.remove("spin"); }, 450);
   });
   var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // SMIL animations inside the summary diagrams and the home map do not obey the CSS reduced-motion rule; pause them explicitly.
+  if (reduced) Array.prototype.forEach.call(document.querySelectorAll("svg"), function (svg) { if (svg.pauseAnimations) try { svg.pauseAnimations(); } catch (e) {} });
 
   // ---------- browse menu + mobile sheet ----------
   var menuWrap = document.getElementById("menuWrap"), menuBtn = menuWrap && menuWrap.querySelector(".menu-btn");
@@ -143,6 +145,7 @@
   if (!overlay) return;
   var input = overlay.querySelector("input");
   var results = overlay.querySelector(".results");
+  var SPARK = '<svg class="spark" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path class="s1" d="M12 2.6l1.9 7.5 7.5 1.9-7.5 1.9L12 21.4l-1.9-7.5L2.6 12l7.5-1.9z"/><path class="s2" d="M19 1.5l.8 2.7 2.7.8-2.7.8L19 8.5l-.8-2.7-2.7-.8 2.7-.8z"/><path class="s3" d="M5 15.5l.8 2.7 2.7.8-2.7.8L5 22.5l-.8-2.7-2.7-.8 2.7-.8z"/></svg>';
   var deep = overlay.querySelector("#deep");
   var sel = -1, items = [], fulltextLoaded = false, fulltextLoading = false;
 
@@ -198,10 +201,10 @@
     var cols = (window.__ARCHIVE__ && window.__ARCHIVE__.collections) || [];
     var out = [];
     if (!terms.length) {
-      out = cols.map(function (c) { return { s: c.s, t: c.t, e: c.e, c: ["Collection · " + c.n + " articles"], col: true, sc: 1 }; }).slice(0, 12);
+      out = cols.map(function (c) { return { s: c.s, t: c.t, e: c.e, c: ["Collection · " + c.n + " articles"], col: true, ai: c.ai, sc: 1 }; }).slice(0, 12);
     } else {
       data.forEach(function (a) { var sc = score(a, terms, q); if (sc > 0) out.push({ a: a, sc: sc }); });
-      cols.forEach(function (c) { if (c.t.toLowerCase().indexOf(q) >= 0) out.push({ s: c.s, t: c.t, e: c.e, c: ["Collection"], col: true, sc: 100 }); });
+      cols.forEach(function (c) { if (c.t.toLowerCase().indexOf(q) >= 0) out.push({ s: c.s, t: c.t, e: c.e, c: ["Collection"], col: true, ai: c.ai, sc: 100 }); });
       out.sort(function (x, y) { return y.sc - x.sc; });
       out = out.slice(0, 40);
     }
@@ -209,13 +212,13 @@
     sel = out.length ? 0 : -1;
     if (!out.length) { results.innerHTML = '<div class="empty">No matches' + (fulltextLoaded ? "" : ". Try enabling full-text search.") + "</div>"; return; }
     results.innerHTML = out.map(function (r, i) {
-      if (r.col) return '<a class="res' + (i === sel ? " sel" : "") + '" href="' + BASE + "collections/" + r.s + '.html"><div class="t">' + hl(r.t, terms) + '</div><div class="s">' + esc(r.e || "") + '</div><div class="c">' + r.c[0] + "</div></a>";
+      if (r.col) return '<a class="res' + (i === sel ? " sel" : "") + '" href="' + BASE + "collections/" + r.s + '.html"><div class="t">' + (r.ai ? SPARK : "") + hl(r.t, terms) + '</div><div class="s">' + esc(r.e || "") + '</div><div class="c">' + r.c[0] + "</div></a>";
       var a = r.a, body = "";
       if (fulltextLoaded && window.__FULLTEXT__ && terms.length) {
         var ft = window.__FULLTEXT_RAW__ && window.__FULLTEXT_RAW__[a.s];
         body = ft ? snippet(ft, terms) : (a.e || "");
       } else body = a.e || "";
-      return '<a class="res' + (i === sel ? " sel" : "") + '" href="' + BASE + "articles/" + a.s + '.html"><div class="t">' + hl(a.t, terms) + '</div><div class="s">' + hl(body, terms) + '</div><div class="c">' + esc((a.c || []).slice(0, 2).join(" · ") || a.a) + " · " + (a.d || "").slice(0, 4) + " · " + a.m + " min</div></a>";
+      return '<a class="res' + (i === sel ? " sel" : "") + '" href="' + BASE + "articles/" + a.s + '.html"><div class="t">' + (a.ai ? SPARK : "") + hl(a.t, terms) + '</div><div class="s">' + hl(body, terms) + '</div><div class="c">' + esc((a.c || []).slice(0, 2).join(" · ") || a.a) + (a.d ? " · " + a.d.slice(0, 4) : "") + " · " + a.m + " min</div></a>";
     }).join("");
   }
   input.addEventListener("input", render);
