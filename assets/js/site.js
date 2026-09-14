@@ -4,7 +4,7 @@
   var BASE = root.getAttribute("data-base") || "";
 
   // ---------- theme ----------
-  function getTheme() { try { return localStorage.getItem("tda-theme") || "dark"; } catch (e) { return "dark"; } }
+  function getTheme() { try { return localStorage.getItem("tda-theme") || "light"; } catch (e) { return "light"; } }
   function setTheme(t) { root.setAttribute("data-theme", t); try { localStorage.setItem("tda-theme", t); } catch (e) {} }
   setTheme(getTheme());
   var tbtn = document.getElementById("themeBtn");
