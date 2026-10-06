@@ -242,6 +242,14 @@ details.orig summary:hover { color: var(--text); }
 .article-body hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
 .article-body iframe.yt { width: 100%; aspect-ratio: 16/9; height: auto; border: 0; border-radius: 10px; margin: 1.4em 0; background: #000; }
 .article-body .media-link a { font-family: var(--sans); font-size: 15px; }
+.article-body .pc-note { font-family: var(--sans); font-size: 13.5px; color: var(--muted); }
+.article-body .pc-list { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 10px; }
+.article-body .pc { border: 1px solid var(--border); border-radius: 12px; padding: 10px 14px; background: var(--surface); }
+.article-body .pc.pc-is-mm { margin-left: 22px; border-color: var(--border-2); background: var(--surface-2); }
+.article-body .pc-h { display: flex; gap: 10px; align-items: baseline; font-family: var(--sans); font-size: 14px; }
+.article-body .pc-t { color: var(--muted); font-size: 12.5px; }
+.article-body .pc-mm { font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--accent); margin-left: 4px; }
+.article-body .pc p { font-size: 15.5px; margin: .4em 0 0; }
 .article-body em { font-style: italic; }
 .article-body > .wp-block-group, .article-body > .wp-block-columns { margin: 0; }
 .article-body .wp-block-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
